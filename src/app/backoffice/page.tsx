@@ -1,10 +1,10 @@
 //import RevenueChart from '@/app/backoffice/revenue-chart';
 //import LatestInvoices from '@/app/backoffice/latest-invoices';
-import { lusitana } from '@/app/ui/fonts';
 import { Suspense } from 'react';
 import { RevenueChartSkeleton, LatestInvoicesSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
 //import CardWrapper from '@/app/backoffice/cards';
 import { Metadata } from 'next';
+import { lusitana } from '@/styles/fonts';
  
 export const metadata: Metadata = {
   title: 'Backoffice',

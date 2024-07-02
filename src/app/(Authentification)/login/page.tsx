@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useState } from 'react';
-import LoginForm from '@/app/ui/login-form';
 import { useRouter } from 'next/navigation';
 import { Metadata } from 'next';
-import GrupoSurLogo from '../ui/gruposur-logo';
+import GrupoSurLogo from '../../ui/gruposur-logo';
+import LoginForm from '@/app/ui/loginForm/loginForm';
+import { Box } from '@mui/material';
 
 /*
 export const metadata: Metadata = {
@@ -15,12 +16,10 @@ export default function LoginPage() {
   return (
     <main className="flex items-center justify-center md:h-screen">
       <div className="relative mx-auto flex w-full max-w-[400px] flex-col space-y-2.5 p-4 md:-mt-32">
-        <div className="flex h-20 w-full items-end rounded-lg bg-blue-500 p-3 md:h-36">
-          <div className="w-32 text-white md:w-36">
+          <Box sx={{boxShadow:'0px 7px 30px 0px rgba(8, 94, 162, 0.9)', margin:0.5, backgroundColor:'#1a97f5',borderRadius: '7px', padding:'10%' }}>
             <GrupoSurLogo />
-          </div>
-        </div>
-        <LoginForm />
+          </Box>
+        <LoginForm/>
       </div>
     </main>
   );
