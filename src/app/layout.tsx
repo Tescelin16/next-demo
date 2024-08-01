@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
-import { inter, lusitana } from "@/styles/fonts";
 import { theme } from "@/styles/theme/theme";
+import Header from "./ui/header/Header";
 
 
 /*export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
+      <body  style={{ height: '100vh', width: '100%' }}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             {children}

@@ -1,7 +1,7 @@
 import { styled} from "@mui/material/styles";
 import { Typography} from "@mui/material";
-import { CustomFormLabelProps } from "./lib/types";
 import {lusitana} from '@/styles/fonts'
+import { CustomFormLabelProps } from "@/app/lib/forms/types";
 
 
 const CustomFormLabel = styled((props: CustomFormLabelProps)=>{

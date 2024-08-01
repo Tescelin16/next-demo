@@ -4,7 +4,7 @@ import {
     KeyIcon,
 } from '@heroicons/react/24/outline';
 import { LoginFormValues } from './types';
-import { PropertyTextField } from '../../forms/lib/types';
+import { PropertyTextField } from '../forms/types';
 
 export const formItems: PropertyTextField[] = [
     {

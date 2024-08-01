@@ -1,7 +1,7 @@
 import { Grid, Typography } from "@mui/material"
 import CustomFormLabel from "./CustomFormLabel"
 import CustomTextField from "./CustomTextField"
-import { GetTextFieldProps } from "./lib/types"
+import { GetTextFieldProps } from "../../lib/loginForm/types"
 
 export const GetTextField = ({property, formik}: GetTextFieldProps) =>{
 

@@ -1,4 +1,4 @@
-
+'use client'
 import {
     AtSymbolIcon,
     KeyIcon,
@@ -6,9 +6,9 @@ import {
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import { useRouter } from 'next/navigation';
 import { FormikProvider, useFormik } from 'formik';
-import { formItems, getInitialValues, getValidation } from './lib/initialize';
+import { formItems, getInitialValues, getValidation } from '../../../lib/loginForm/initialize';
 import { Button, Card, CardContent, CardHeader, Grid } from '@mui/material';
-import { GetTextField } from '../forms/GetTextField';
+import { GetTextField } from '../GetTextField';
 import {lusitana} from '@/styles/fonts'
     
 export default function LoginForm() {

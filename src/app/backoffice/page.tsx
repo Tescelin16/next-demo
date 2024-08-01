@@ -5,6 +5,10 @@ import { RevenueChartSkeleton, LatestInvoicesSkeleton, CardsSkeleton } from '@/a
 //import CardWrapper from '@/app/backoffice/cards';
 import { Metadata } from 'next';
 import { lusitana } from '@/styles/fonts';
+import { Box, Grid } from '@mui/material';
+import Image from 'next/image';
+import FondoEmpresa from '../../../public/background/colectivo grupo sur.jpg';
+import GrupoSurLogo from '../ui/gruposur-logo';
  
 export const metadata: Metadata = {
   title: 'Backoffice',
@@ -12,23 +16,23 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   return (
-    <main>
-      <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
-        Backoffice
-      </h1>
-     {/* { <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <Suspense fallback={<CardsSkeleton />}>
-          <CardWrapper />
-        </Suspense>
-      </div>}
-      <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
-        <Suspense fallback={<RevenueChartSkeleton />}>
-          <RevenueChart />
-        </Suspense>
-        <Suspense fallback={<LatestInvoicesSkeleton />}>
-          <LatestInvoices />
-        </Suspense>
-      </div> */}
-    </main>
+<Grid container display='flex' lg={12} wrap='wrap' sx={{ }}>
+       
+      <Grid item xs={12} sm={6} md={6} lg={6} sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 0,
+        marginRight: 0,
+        position: 'relative',
+        zIndex: 1,
+        
+      }}>
+        <Box sx={{ boxShadow: '0px 7px 30px 0px rgba(8, 94, 162, 0.9)', marginBottom:2, backgroundColor: '#1a97f5', borderRadius: '7px', padding: '10%' }}>
+          <GrupoSurLogo />
+        </Box>
+      </Grid>
+    </Grid>
   );
 }
