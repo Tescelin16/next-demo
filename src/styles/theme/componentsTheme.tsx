@@ -86,11 +86,46 @@ const components: Components<Theme>={
     },
   },
 
+  MuiList:{
+    styleOverrides: {
+      root: (props) => ({
+        "&.Mui-selected": {
+          backgroundColor: props.theme.palette.info.main,
+        },
+      }),
+    },
+  },
+
   MuiListItem: {
     styleOverrides: {
+      root: (props) => ({
+        borderRadius: '0px',
+        border:'none',
+        '&:hover': {
+          boxShadow: '0px 7px 30px 0px rgba(90, 114, 123, 0.25)',
+        },
+        "&.Mui-selected": {
+          backgroundColor: props.theme.palette.info.main,
+        },
+      }),
+    },
+  },
+
+  MuiListItemIcon: {
+    styleOverrides: {
       root: {
-        borderRadius: '9px',
+        minWidth: '40px',
       },
+    },
+  },
+
+  MuiListItemText: {
+    styleOverrides: {
+      root: (props) => ({
+        '&:hover': {
+          
+        },
+      }),
     },
   },
 
@@ -105,13 +140,6 @@ const components: Components<Theme>={
     },
   },
 
-  MuiListItemIcon: {
-    styleOverrides: {
-      root: {
-        minWidth: '40px',
-      },
-    },
-  },
 
   MuiGrid: {
     styleOverrides: {

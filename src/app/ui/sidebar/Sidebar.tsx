@@ -24,18 +24,18 @@ const Sidebar = () =>{
           }}
           open
         >
-            <Grid container display='flex' flexDirection='column' alignItems='center' sx={{overflowX: 'hidden',}}>
-                <Grid item sx={{height:'60px', display:'flex', alignItems:'center', backgroundColor:'#1046c1',overflowX: 'hidden',}}>
+            <Grid container display='flex' flexDirection='column' alignItems='center' sx={{overflowX: 'hidden', padding:0, margin:0}}>
+                <Grid item sx={{height:'60px', width:'100%',display:'flex', alignItems:'center', justifyContent:'center',overflowX: 'hidden',}}>
                     <MenuIcon/>
                 </Grid>
-                <Grid item>
+                <Grid item sx={{justifyContent:'flex-start',width:'100%'}}>
                     <List>
                     {sidebarItems.map((item, index)=>(
                         <ListItem>
-                            <ListItemIcon>
+                            <ListItemIcon >
                                 <item.icon/>
                             </ListItemIcon>
-                            {expanded && <ListItemText primary={<Typography>{item.title}</Typography>}/>}
+                            {expanded && <ListItemText  primary={<Typography variant="h5">{item.title}</Typography>}/>}
                         </ListItem>
                     ))}
                 </List>

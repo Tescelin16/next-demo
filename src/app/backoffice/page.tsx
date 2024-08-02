@@ -25,7 +25,6 @@ export default async function Page() {
         justifyContent: 'center',
         padding: 0,
         marginRight: 0,
-        position: 'relative',
         zIndex: 1,
         
       }}>

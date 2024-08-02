@@ -8,10 +8,10 @@ export default function BackOfficeLayout ({children}:{children: React.ReactNode}
                 <Sidebar/>
             </Grid>
             <Grid item sx={{height:'60px'}}>
-            <Header />
+                <Header />
             </Grid>
-            <Grid item sx={{flex:1, paddingTop:'60px'}}>
-            {children}
+            <Grid item sx={{flex:1, paddingTop:'60px', paddingLeft:'60px'}}>
+                {children}
             </Grid>
     </Grid>
     )
