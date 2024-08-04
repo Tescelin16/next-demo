@@ -39,7 +39,7 @@ export default function LoginForm() {
             } catch (error) {
                 
             } finally {
-                router.push('/backoffice')
+                router.push('/home')
             }
           },
     })

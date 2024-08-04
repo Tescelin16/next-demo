@@ -5,12 +5,12 @@ import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 export const sidebarItems: SidebarItem[] = [
     {
         title: 'Inicio',
-        href:'/Inicio',
+        href:'/home',
         icon: HomeIcon
     },
     {
         title: 'Reservas',
-        href:'/reservas',
+        href:'/reservation',
         icon: EventAvailableIcon
     }
 ]

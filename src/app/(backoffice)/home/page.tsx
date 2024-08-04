@@ -8,11 +8,9 @@ import { lusitana } from '@/styles/fonts';
 import { Box, Grid } from '@mui/material';
 import Image from 'next/image';
 import FondoEmpresa from '../../../public/background/colectivo grupo sur.jpg';
-import GrupoSurLogo from '../ui/gruposur-logo';
+import GrupoSurLogo from '../../ui/gruposur-logo';
  
-export const metadata: Metadata = {
-  title: 'Backoffice',
-};
+
 
 export default async function Page() {
   return (

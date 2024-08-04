@@ -3,9 +3,15 @@ import { sidebarItems } from "@/app/lib/sidebar/sidebarItems";
 import { Drawer, Grid, Icon, List, ListItem, ListItemIcon, ListItemText, Typography } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Sidebar = () =>{
     const [expanded, setExpanded] = useState(false);
+    const router = useRouter();
+    const handleClick = (href:string) =>{
+        
+        router.push(href);
+    } 
     return (
         <Drawer
         onMouseEnter={() => setExpanded(true)}
@@ -31,7 +37,7 @@ const Sidebar = () =>{
                 <Grid item sx={{justifyContent:'flex-start',width:'100%'}}>
                     <List>
                     {sidebarItems.map((item, index)=>(
-                        <ListItem>
+                        <ListItem onClick={()=>handleClick(item.href)} >
                             <ListItemIcon >
                                 <item.icon/>
                             </ListItemIcon>
