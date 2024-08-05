@@ -33,7 +33,8 @@ export const getInitialValues = (): LoginFormValues => {
     return { username: '', password: ''}
 }
 
-export function getValidation () {
+
+export const getValidation = () =>{
     return Yup .object().shape({
         username: Yup.string()
           .min(2, 'Mínimo 2 caracteres')

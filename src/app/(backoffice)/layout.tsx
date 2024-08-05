@@ -3,9 +3,7 @@ import Header from "../ui/header/Header";
 import Sidebar from "../ui/sidebar/Sidebar";
 import { Metadata } from "next";
 
-export const metadata: Metadata= {
-    title: 'backoffice'
-}
+
 
 export default function BackOfficeLayout ({children}:{children: React.ReactNode}){
     return (
